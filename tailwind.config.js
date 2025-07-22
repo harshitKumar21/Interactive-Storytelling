@@ -17,6 +17,13 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
       },
+      colors: {
+        ...defaultConfig.theme.extend.colors,
+        primary: {
+          DEFAULT: "#9333ea", // purple-600
+          700: "#7e22ce",
+        },
+      },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
         "slide-up": "slideUp 0.3s ease-out",
