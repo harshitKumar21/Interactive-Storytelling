@@ -3,21 +3,19 @@ const defaultConfig = require("shadcn/ui/tailwind.config")
 
 module.exports = {
   ...defaultConfig,
-  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./pages/**/*.{ts,tsx}", "*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    ...defaultConfig.content,
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     ...defaultConfig.theme,
     extend: {
       ...defaultConfig.theme.extend,
       fontFamily: {
         sans: ["Inter", "sans-serif"],
-      },
-      colors: {
-        ...defaultConfig.theme.extend.colors,
-        primary: {
-          DEFAULT: "#9333EA", // purple-600
-          700: "#7E22CE",
-          foreground: defaultConfig.theme.extend.colors.primary.foreground,
-        },
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-in-out",
