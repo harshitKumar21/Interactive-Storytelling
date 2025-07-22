@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -9,6 +11,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Remove any v0-specific configurations
+  experimental: {
+    // Clean experimental features
+  },
 }
 
-export default nextConfig
+module.exports = nextConfig

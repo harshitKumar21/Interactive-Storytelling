@@ -1,30 +1,85 @@
-# Interactive storytelling project
+# Interactive Tales
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+An immersive interactive storytelling web application built with Next.js and TypeScript.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/harshs-projects-8d87e671/v0-interactive-storytelling-project)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/CGDsVxTkxQP)
+## Features
 
-## Overview
+- 🎭 **3 Genres**: Adventure, Romance, and Sports
+- 📚 **6 Complete Stories** with multiple branching paths
+- 🎨 **Modern UI** with glassmorphism effects
+- 📱 **Responsive Design** for all devices
+- ♿ **Accessible** with keyboard navigation
+- ⚡ **Fast Performance** with Next.js optimizations
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+\`\`\`bash
+git clone <your-repo-url>
+cd interactive-storytelling
+\`\`\`
+
+2. Install dependencies:
+\`\`\`bash
+npm install
+\`\`\`
+
+3. Run the development server:
+\`\`\`bash
+npm run dev
+\`\`\`
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Deployment
 
-Your project is live at:
+### Deploy to Vercel (Recommended)
 
-**[https://vercel.com/harshs-projects-8d87e671/v0-interactive-storytelling-project](https://vercel.com/harshs-projects-8d87e671/v0-interactive-storytelling-project)**
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically
 
-## Build your app
+### Deploy to Netlify
 
-Continue building your app on:
+1. Build the project:
+\`\`\`bash
+npm run build
+\`\`\`
 
-**[https://v0.dev/chat/projects/CGDsVxTkxQP](https://v0.dev/chat/projects/CGDsVxTkxQP)**
+2. Deploy the `out` folder to Netlify
 
-## How It Works
+### Other Hosting
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+The app exports as static files and can be hosted on any static hosting service.
+
+## Project Structure
+
+\`\`\`
+interactive-storytelling/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+├── package.json
+└── README.md
+\`\`\`
+
+## Technologies Used
+
+- **Next.js 14** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **Lucide React** - Icons
+
+## License
+
+MIT License - feel free to use this project for your own purposes.
